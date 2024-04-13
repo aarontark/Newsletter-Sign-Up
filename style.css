@@ -12,5 +12,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: "Roboto", sans-serif;
+}
+
+.signup-card {
+    min-height: calc(100vh - 5rem);
+    min-width: 100%;
+}
+
+.signup-img {
+    width: 100%;
+}
+
+
+.attribution {
+    top: 0;
 }
