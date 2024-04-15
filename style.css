@@ -1,3 +1,5 @@
+/* root colors and global styles */
+
 :root {
     --tomato: hsl(4, 100%, 67%);
     --dark-slate-grey: hsl(234, 29%, 20%);
@@ -32,16 +34,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100vh;
     color: var(--charcoal-grey);
 }
 
-.signup-card {
-    min-width: 100%;
+.signup-form-container {
+    display: block;
 }
 
-.signup-form-container {
-    display: none;
+.signup-card {
+    width: 100%;
+    max-width: 428px;
 }
 
 .signup-img {
@@ -55,11 +59,15 @@ body {
     gap: 1.25rem;
 }
 
+.signup-para {
+    font-size: 1.05rem;
+}
+
 .signup-bullets {
     display: flex;
     flex-direction: column;
-    gap: .4rem;
-    font-size: 1rem;
+    gap: .75rem;
+    font-size: 1.025rem;
 }
 
 .bullet-item-container {
@@ -88,7 +96,7 @@ body {
 .email-label {
     color: var(--dark-slate-grey);
     font-weight: bold;
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .error-message {
@@ -129,8 +137,7 @@ body {
 /* success card styling */
 
 .confirmation-card {
-    display: flex;
-    flex-direction: column;
+    display: none;
     padding: 1.5rem;
     gap: 1.5rem;
 }
@@ -161,4 +168,11 @@ body {
     color: #fff;
     font-size: .85rem;
     padding: 1.5rem 0;
+    width: 100%;
+}
+
+/* media queries */
+
+@media (min-width: 1440px) {
+
 }
