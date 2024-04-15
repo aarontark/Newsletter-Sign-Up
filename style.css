@@ -16,6 +16,17 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2.5rem;
+    color: var(--dark-slate-grey);
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -29,6 +40,10 @@ body {
     min-width: 100%;
 }
 
+.signup-form-container {
+    display: none;
+}
+
 .signup-img {
     width: 100%;
 }
@@ -38,17 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-}
-
-.signup-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--dark-slate-grey)
-}
-
-.signup-para {
-    line-height: 1.5rem;
-    font-weight: 500;
 }
 
 .signup-bullets {
@@ -105,7 +109,7 @@ body {
     
 }
 
-.submit {
+.submit, button {
     width: 100%;
     color: #fff;
     background: var(--dark-slate-grey);
@@ -118,18 +122,43 @@ body {
     cursor: pointer;
 }
 
-.submit:hover {
+.submit:hover, button:hover {
     background: linear-gradient(90deg, var(--gradient-pink), var(--gradient-orange));
 }
 
+/* success card styling */
+
 .confirmation-card {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
 }
 
+.confirmation-icon {
+    width: 4rem;
+    padding-top: 8rem;
+}
+
+.confirmation-title {
+    padding-top: 1rem;
+    line-height: 2.5rem;
+}
+
+.email-highlight {
+    color: rgba(0, 0, 0, 0.952);
+    font-weight: 700;
+}
+
+.dismiss-button {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    color: #ffffffdc;
+}
 
 .attribution {
     background-color: var(--dark-slate-grey);
     color: #fff;
-    font-size: .75rem;
+    font-size: .85rem;
     padding: 1.5rem 0;
 }
