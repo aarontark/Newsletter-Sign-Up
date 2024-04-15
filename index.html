@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -37,11 +37,11 @@
         </ul>
         <form class="signup-form" action="">
           <div class="label-container">
-            <label for="" class="email-label">Email address</label>
+            <label for="input-box" class="email-label">Email address</label>
             <p class="error-message">Valid email required</p>
           </div>
-          <input type="email">
-          <input type="submit" value="Subscribe to monthly newsletter">
+          <input id="input-box" class="input-box" type="email" placeholder="email@company.com" value>
+          <input class="submit" type="submit" value="Subscribe to monthly newsletter">
         </form>
       </div>
     </section>
