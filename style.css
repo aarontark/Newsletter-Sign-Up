@@ -41,6 +41,7 @@ body {
 
 .signup-form-container {
     display: block;
+    background: var(--white);
 }
 
 .signup-card {
@@ -100,7 +101,9 @@ body {
 }
 
 .error-message {
-    visibility: hidden;
+    font-size: 1rem;
+    color: var(--tomato);
+    opacity: 0;
 }
 
 .input-box {
@@ -109,7 +112,7 @@ body {
     font-size: 1rem;
     opacity: 0.5;
     border-radius: .5rem;
-    border-color: #00000080;
+    border: 1px solid rgba(0, 0, 0, 0.829);
 }
 
 .input-box:focus {
@@ -117,9 +120,9 @@ body {
     
 }
 
-.submit, button {
+.button {
     width: 100%;
-    color: #fff;
+    color: var(--white);
     background: var(--dark-slate-grey);
     border: none;
     margin-top: 1.5rem;
@@ -130,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.submit:hover, button:hover {
+.button:hover {
     background: linear-gradient(90deg, var(--gradient-pink), var(--gradient-orange));
 }
 
@@ -140,6 +143,7 @@ body {
     display: none;
     padding: 1.5rem;
     gap: 1.5rem;
+    background: var(--white);
 }
 
 .confirmation-icon {
@@ -165,7 +169,7 @@ body {
 
 .attribution {
     background-color: var(--dark-slate-grey);
-    color: #fff;
+    color: var(--white);
     font-size: .85rem;
     padding: 1.5rem 0;
     width: 100%;
@@ -173,6 +177,88 @@ body {
 
 /* media queries */
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--dark-slate-grey);
+    }
+
+    .signup-card {
+        max-width: 100%;
+        background-color: var(--dark-slate-grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup-form-container {
+        max-width: 62.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr min-content;
+        padding:  1.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .signup-img {
+        grid-column: 4 / 7;
+        grid-row: 1 / 12;
+        height: 100%;
+        content: url('./assets/images/illustration-sign-up-desktop.svg');
+    }
+
+    .signup-text {
+        grid-column: 1 / 4;
+        display: flex;
+        gap: 1.25rem;
+        justify-content: space-between;
+        padding: 4.25rem 5rem 4.25rem 3.25rem;
+        width: 100%;
+    }
+
+    .signup-para {
+        font-size: 1.12rem;
+    }
+
+    .signup-title {
+        font-size: 3.75rem;
+    }
+
+    .signup-bullets {
+        gap: .75rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+    
+    .confirmation-card {
+        max-width: 31rem;
+        display: none;
+        flex-direction: column;
+        padding: 3rem 4rem 4rem 4rem;
+        border-radius: 2rem;
+    }
+
+    .confirmation-icon {
+        padding: 0;
+    }
+
+    .confirmation-title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .dismiss-button {
+        margin: 0;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
 }
