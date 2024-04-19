@@ -108,18 +108,44 @@ body {
     opacity: 0;
 }
 
+/* input classes */
+
 .input-box {
     width: 100%;
     padding: 1rem 1.25rem;
     font-size: 1rem;
-    opacity: 0.5;
+    opacity: 0.75;
     border-radius: .5rem;
     border: 1px solid rgba(0, 0, 0, 0.829);
 }
 
 .input-box:focus {
+    outline: 1.5px solid black;
     opacity: 1;
-    
+    color: #000000;
+}
+
+.input-box-error {
+    outline: 2px solid hsl(4, 100%, 67%);
+    background: #ff62578c;
+    border: none;
+    opacity: 1;
+    color: black;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+.input-box-error:focus {
+    background: #ff625760;
+    border: none;
+    outline: 2.5px solid red;
+    color: #000000;
+}
+
+.input-box-error::placeholder {
+    color: rgba(248, 79, 57, 0.849);
 }
 
 .button {
@@ -145,6 +171,7 @@ body {
 
 .confirmation-card {
     display: none;
+    flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
     background: var(--white);
