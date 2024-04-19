@@ -33,7 +33,7 @@ body {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     color: var(--charcoal-grey);
