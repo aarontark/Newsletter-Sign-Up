@@ -9,7 +9,6 @@ const confirmationCard = document.querySelector('.confirmation-card');
 
 emailInput.addEventListener('invalid', () => {
     errorMsg.style.opacity = '1';
-
     if (emailInput.classList.contains('input-box')) {
         emailInput.classList.remove('input-box');
         emailInput.classList.add('input-box-error');
@@ -20,6 +19,8 @@ emailInput.addEventListener('invalid', () => {
 
 emailForm.addEventListener('submit', () => {
     event.preventDefault();
+    emailInput.classList.remove('input-box-error');
+    emailInput.classList.add('input-box');
     registerCard.style.display = 'none';
     confirmationCard.style.display = 'flex';
     emailHighlight.innerHTML = emailInput.value;
