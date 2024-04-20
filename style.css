@@ -162,9 +162,8 @@ body {
 }
 
 
-.button:hover {
+.button:hover, .button:active {
     background: linear-gradient(90deg, var(--gradient-pink), var(--gradient-orange));
-    transition: background .3s ease;
 }
 
 /* success card styling */

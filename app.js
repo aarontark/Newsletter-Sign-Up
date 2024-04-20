@@ -33,8 +33,10 @@ dismissBtn.addEventListener('click', () => {
         registerCard.style.display = 'block';
     }
     confirmationCard.style.display = 'none';
+    emailInput.value = '';
 })
 
+console.log(emailInput);
 
 
 
