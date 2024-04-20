@@ -34,6 +34,7 @@ dismissBtn.addEventListener('click', () => {
     }
     confirmationCard.style.display = 'none';
     emailInput.value = '';
+    errorMsg.style.opacity = '0';
 })
 
 console.log(emailInput);
