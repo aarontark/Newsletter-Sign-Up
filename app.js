@@ -9,6 +9,7 @@ const confirmationCard = document.querySelector('.confirmation-card');
 
 emailInput.addEventListener('invalid', () => {
     errorMsg.style.opacity = '1';
+
     if (emailInput.classList.contains('input-box')) {
         emailInput.classList.remove('input-box');
         emailInput.classList.add('input-box-error');
@@ -21,6 +22,16 @@ emailForm.addEventListener('submit', () => {
     event.preventDefault();
     registerCard.style.display = 'none';
     confirmationCard.style.display = 'flex';
+    emailHighlight.innerHTML = emailInput.value;
+})
+
+dismissBtn.addEventListener('click', () => {
+    if (window.innerWidth >= 1120) {
+        registerCard.style.display = 'grid';
+    } else {
+        registerCard.style.display = 'block';
+    }
+    confirmationCard.style.display = 'none';
 })
 
 
