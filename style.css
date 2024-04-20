@@ -179,13 +179,14 @@ body {
 
 .confirmation-icon {
     width: 4rem;
-    padding-top: 8rem;
+    padding-top: 10rem;
 }
 
 .confirmation-title {
     padding-top: 1rem;
     line-height: 2.5rem;
 }
+
 
 .email-highlight {
     color: rgba(0, 0, 0, 0.952);
@@ -196,14 +197,6 @@ body {
     margin-top: 15rem;
     margin-bottom: 2rem;
     color: #ffffffdc;
-}
-
-.attribution {
-    background-color: var(--dark-slate-grey);
-    color: var(--white);
-    font-size: .85rem;
-    padding: 1.5rem 0;
-    width: 100%;
 }
 
 /* media queries */
@@ -291,9 +284,4 @@ body {
         margin: 0;
     }
 
-    .attribution {
-        position: absolute;
-        bottom: 0;
-        z-index: 0;
-    }
 }
